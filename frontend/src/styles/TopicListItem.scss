@@ -1,6 +1,5 @@
 .topic-list--item {
   line-height: 24px;
-  margin-left: 24px;
 }
 
 .topic-list--item a {
@@ -8,6 +7,7 @@
   text-decoration: none;
   font-weight: 500;
   color: #2b2b2b;
+  margin-right: 24px; 
 
   &:hover {
     text-decoration: underline;
