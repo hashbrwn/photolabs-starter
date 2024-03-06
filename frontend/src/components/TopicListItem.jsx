@@ -15,7 +15,7 @@ const TopicListItem = (props) => {
       })
       .catch((err) =>
         console.log(
-          "An unexpected error occured attempting to perform request.",
+          " unexpected error occured attempting to perform request.",
           err
         )
       );
