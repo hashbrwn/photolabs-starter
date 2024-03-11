@@ -2,9 +2,11 @@ import React from "react";
 
 import "styles/TopNavigationBar.scss";
 import TopicList from "components/TopicList";
+import FavBadge from "./FavBadge";
 
 const TopNavigation = (props) => {
   const { favPhotoList, topics, getTopicPhotos } = props;
+  console.log('favPhotoList', favPhotoList)
   return (
     <>
       <div className="top-nav-bar">
@@ -14,6 +16,7 @@ const TopNavigation = (props) => {
           topics={topics}
           getTopicPhotos={getTopicPhotos}
         />
+        <FavBadge isFavPhotoExist ={favPhotoList.length < 0}/> 
       </div>
     </>
   );

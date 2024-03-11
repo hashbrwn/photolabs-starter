@@ -8,6 +8,7 @@ export function FavIcon({
   stroke,
   displayAlert,
 }) {
+  console.log('displayAlert', displayAlert)
   return (
     <svg
       width={width}
@@ -24,7 +25,7 @@ export function FavIcon({
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      {!!displayAlert && (
+      {displayAlert && (
         <circle
           cx="21"
           cy="4"
