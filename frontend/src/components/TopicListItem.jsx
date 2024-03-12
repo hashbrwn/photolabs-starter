@@ -9,7 +9,7 @@ const TopicListItem = (props) => {
   const getPhotos = (id) => {
     axios
       // TODO: change to relative url + proxy
-      .get(`http://localhost:8001/api/topics/photos/${id}`)
+     .get(`/api/topics/photos/${id}`)
       .then((res) => {
         getTopicPhotos(res.data);
       })

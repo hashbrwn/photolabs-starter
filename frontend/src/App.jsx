@@ -13,8 +13,9 @@ const App = () => {
 
   useEffect(() => {
     // TODO: change to relative url + proxy
-    const topicsApi = "http://localhost:8001/api/topics";
-    const photosApi = "http://localhost:8001/api/photos";
+    const topicsApi = "/api/topics";
+    const photosApi = "/api/photos";
+    
 
     Promise.all([axios.get(topicsApi), axios.get(photosApi)]).then((all) => {
       const [topics, photos] = all;
